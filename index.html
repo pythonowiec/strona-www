@@ -2,7 +2,7 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
     <title>Poznaj Pythona</title>
 
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
@@ -27,24 +27,54 @@
             <a class="nav-link" href="#">Strona Główna<span class="sr-only">(current)</span></a>
           </li>
           <li class="nav-item">
-            <a class="nav-link" href="#">Pobierz</a>
+            <a class="nav-link" href="#" style="color: ghostwhite;">Pobierz</a>
           </li>
           <li class="nav-item">
-            <a class="nav-link" href="#">O nas</a>
+            <a class="nav-link" href="#" style="color: ghostwhite;">O nas</a>
           </li>
           <li class="nav-item dropdown">
-            <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+            <a class="nav-link dropdown-toggle"  style="color: ghostwhite;" href="#" id="navbarDropdownMenuLink" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
               Ciekawostki
             </a>
             <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
               <a class="dropdown-item" href="#">Statystyki</a>
             </div>
           </li>
+          <li class="nav-item">
+            <div class="btn-group" role="group" aria-label="group">
+              <button type="button" class="btn btn-success">Zaloguj</button>
+              <button type="button" class="btn btn-success">Zarejestruj</button>
+            </div>
+          </li>
         </ul>
       </div>
     </nav>
 
-    <div class="container"></div>
+    <div class="container">
+
+      <div id="caro" class="carousel slide" data-ride="carousel">
+        <div class="carousel-inner">
+          <div class="carousel-item active" data-interval="10000">
+            <img src="pobrane.jpg" class="d-block w-100 caroImg" alt="...">
+          </div>
+          <div class="carousel-item" data-interval="10000">
+            <img src="pobrane.jpg" class="d-block w-100 caroImg" alt="...">
+          </div>
+          <div class="carousel-item" data-interval="10000">
+            <img src="pobrane.jpg" class="d-block w-100 caroImg" alt="...">
+          </div>
+        </div>
+        <a class="carousel-control-prev" href="#caro" role="button" data-slide="prev">
+          <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+          <span class="sr-only">Previous</span>
+        </a>
+        <a class="carousel-control-next" href="#caro" role="button" data-slide="next">
+          <span class="carousel-control-next-icon" aria-hidden="true"></span>
+          <span class="sr-only">Next</span>
+        </a>
+      </div>
+
+    </div>
 
   </div>
 </body>
