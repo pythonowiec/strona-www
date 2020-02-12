@@ -39,3 +39,14 @@ body{
   font-size: 25px;
 }
 
+#title{
+  font-size: 30px;
+}
+
+a{
+  color: white;
+}
+a:hover{
+  color: bisque;
+  text-decoration: none;
+}
