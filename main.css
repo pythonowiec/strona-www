@@ -56,8 +56,3 @@ body{
 .hyplink:hover{
   color: bisque;
 }
-
-.card{
-  position: fixed;
-  object-position: 50% 50%;
-}
