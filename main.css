@@ -13,9 +13,10 @@ body{
   background-color: #606060;
   font-family: 'Lato', sans-serif;
   font-weight: 400;
+  white-space: nowrap;
 }
 
-.carousel{
+#caro{
   height: auto;
   width: 100%;
 }
@@ -28,8 +29,8 @@ body{
   background-size: cover;
   width: 100%;
   height: 100%;
-  filter: blur(3px);
-  -webkit-filter: blur(3px);
+  filter: blur(4px);
+  -webkit-filter: blur(4px);
   background-position: center;
   background-repeat: no-repeat;
 
@@ -55,4 +56,9 @@ body{
 
 .hyplink:hover{
   color: bisque;
+}
+
+.iframes{
+  width: 100%;
+  height: 800px;
 }

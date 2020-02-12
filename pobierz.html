@@ -17,7 +17,7 @@
 <body>
     <div class="wrapper">
             <nav class="navbar navbar-expand-lg sticky-top navbar-dark bg-dark">
-                    <a class="navbar-brand" href="poznaj.html">Poznaj Pythona</a>
+                    <a class="navbar-brand" href="index.html">Poznaj Pythona</a>
                     <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
                       <span class="navbar-toggler-icon"></span>
                     </button>
@@ -51,10 +51,33 @@
                 </nav>
 
                 <div class="cont">
-                  <div id="title"><i><b>Skąd można dostać pythona?</b></i></div>
-                  Pythona można otrzymać z <a class="hyplink" href="https://www.python.org/downloads/">strony głównej</a>, a to <a class="hyplink" href="https://www.python.org/doc/">dokumentacja </a>
-                </div>
+                  <span style="font-weight: 700; font-size: 32px;">Skąd można pobrać Pythona?</span><br />
+                  Strona główna: <a class="btn btn-success" href="https://www.python.org/downloads/" target="_blank">Pobierz</a><br />
+                  Najnowsza stabilna wersja: <a class="btn btn-success" href="https://www.python.org/ftp/python/3.8.1/python-3.8.1-amd64.exe">Pobierz</a><br />
+                  <span style="font-weight: 700; font-size: 32px;">Dokumentacja</span><br />
+
+                  <button class="btn btn-primary" id="docBtn" type="button" data-toggle="collapse" data-target="#collapseIframe" aria-expanded="false" aria-controls="collapseExample">
+                    Sprawdź
+                  </button>
+
+                  <div class="collapse" id="collapseIframe">
+                    <iframe class="iframes" src="https://docs.python.org/3.8/"></iframe>
+                  </div>
+
 
     </div>
+
+    <script>
+
+      var status = sessionStorage.getItem("btnStatus");
+      console.log(status);
+
+      if(status == "clicked"){
+        $("#docBtn").click();
+        sessionStorage.setItem("btnStatus", "notclicked");
+      }
+
+    </script>
+
 </body>
 </html>
