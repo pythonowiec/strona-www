@@ -53,7 +53,31 @@
                 <div class="cont">
                   <span style="font-size: 28px; font-weight: 700; color: ghostwhite;">Ranking najlepszych języków programowania w 2019 r.</span><br />
                   <img src="img/statystyki.jpg" />
-                </div>
+
+                  <button class="btn btn-primary" id="docBtn" type="button" data-toggle="collapse" data-target="#collapseIframe" aria-expanded="false" aria-controls="collapseExample">
+                    Inne
+                  </button>
+
+                  <div class="collapse" id="collapseIframe" style="margin:20px; ">
+                    <iframe class="iframes" src="https://jaki-jezyk-programowania.pl/statystyki-jezykow-programowania-2019/"></iframe>
+                  </div>
+
+
+    </div>
+
+    <script>
+
+      var status = sessionStorage.getItem("btnStatus");
+      console.log(status);
+
+      if(status == "clicked"){
+        $("#docBtn").click();
+        sessionStorage.setItem("btnStatus", "notclicked");
+      }
+
+    </script>
+
+              
 
 
     </div>
