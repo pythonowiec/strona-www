@@ -6,17 +6,16 @@
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
 
     <title>Poznaj Pythona</title>
-    
+
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
     <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
     
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
     <link rel="stylesheet" href="main.css" type="text/css"/>
+
 </head>
 <body>
-  
-
     <div class="wrapper">
             <nav class="navbar navbar-expand-lg sticky-top navbar-dark bg-dark">
                     <a class="navbar-brand" href="poznaj.html">Poznaj Pythona</a>
@@ -36,7 +35,7 @@
                             Ciekawostki
                           </a>
                           <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
-                            <a class="dropdown-item" href="#">Statystyki</a>
+                            <a class="dropdown-item" href="ciekawostki.html">Statystyki</a>
                           </div>
                         </li>
                         <li class="nav-item">
@@ -47,43 +46,21 @@
                         </li>
                       </ul>
                     </div>
-                </nav>
-                
-                <div class="cont">
-                  <span style="font-size: 28px; font-weight: 700; color: ghostwhite;">Ranking najlepszych języków programowania w 2019 r.</span><br />
-                  <img src="img/statystyki.jpg" />
+                  </nav>
+                  <div class="cont">
+                    <span style="font-weight: 700; font-size: 32px;">Skąd można nauczyć się Pythona?</span><br />
+                    <a href="https://www.udemy.com/courses/search/?q=python" class="hyplink">Udemy</a><br>
+                    <a href="https://www.youtube.com/user/piotrek54PL" class="hyplink">YT</a><br>
+                    <a href="https://www.youtube.com/channel/UC4JX40jDee_tINbkjycV4Sg" class="hyplink">YT</a>
 
-                  <button class="btn btn-primary" id="docBtn" type="button" data-toggle="collapse" data-target="#collapseIframe" aria-expanded="false" aria-controls="collapseExample">
-                    Inne
-                  </button>
-
-                  <div class="collapse" id="collapseIframe" style="margin:20px; ">
-                    <iframe class="iframes" src="https://jaki-jezyk-programowania.pl/statystyki-jezykow-programowania-2019/"></iframe>
                   </div>
-                </div>
 
-                <div class="footer">
-                  Poznaj Pythona. Strona w sieci od 2020r. &copy; Wszelkie prawa zastrzeżone. <p>Jakub D. & Mateusz D.</p>
-                </div>
-                 
+                  </div>
+
+                  <div class="footer">
+                    Poznaj Pythona. Strona w sieci od 2020r. &copy; Wszelkie prawa zastrzeżone. <p>Jakub D. & Mateusz D.</p>
+                  </div>
     </div>
-
-    <script>
-
-      var status = sessionStorage.getItem("btnStatus");
-      console.log(status);
-
-      if(status == "clicked"){
-        $("#docBtn").click();
-        sessionStorage.setItem("btnStatus", "notclicked");
-      }
-
-    </script>
-
-              
-
-
-    </div>
-
+    
 </body>
 </html>
